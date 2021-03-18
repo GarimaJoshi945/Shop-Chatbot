@@ -1,0 +1,1073 @@
+{
+  "intents": [
+    {
+      "intent": "Covid",
+      "examples": [
+        {
+          "text": "Corona Virus"
+        },
+        {
+          "text": "Covid-19"
+        },
+        {
+          "text": "I want to know more about Covid"
+        },
+        {
+          "text": "Latest news on Covid"
+        },
+        {
+          "text": "What is Covid"
+        }
+      ],
+      "description": "Know more about Covid-19"
+    },
+    {
+      "intent": "enquiry",
+      "examples": [
+        {
+          "text": "Can you show me the list of items ?"
+        },
+        {
+          "text": "Can you show me vegetables prices ?"
+        },
+        {
+          "text": "Show the prices of vegetables ?"
+        },
+        {
+          "text": "What are the essential items do you have"
+        },
+        {
+          "text": "What are the offers you having ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Gm"
+        },
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "hello,good morning"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Order",
+      "examples": [
+        {
+          "text": "Can you place me an order"
+        },
+        {
+          "text": "I need grocery"
+        },
+        {
+          "text": "I want to buy grocery"
+        },
+        {
+          "text": "I want to buy vegetables"
+        },
+        {
+          "text": "I want to place an order"
+        },
+        {
+          "text": "I want vegetables"
+        },
+        {
+          "text": "Order"
+        },
+        {
+          "text": "Please take the order"
+        },
+        {
+          "text": "What is the prices of vegetables ?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "address",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ujjain",
+          "synonyms": [
+            "ahmedabad",
+            "akola",
+            "amravati",
+            "aurangabad",
+            "bareilly",
+            "bhagalpur",
+            "bhavnagar",
+            "Bhopal",
+            "bilaspur",
+            "chandrapur",
+            "chhatarpur",
+            "chhindwara",
+            "darbhanga",
+            "dhule",
+            "etawah",
+            "faizabad",
+            "gandhinagar",
+            "ghazipur",
+            "gondia",
+            "gorakhpur",
+            "gwalior",
+            "hajipur",
+            "hapur",
+            "Indore",
+            "jabalpur",
+            "jaipur",
+            "jalgaon",
+            "jamnagar",
+            "jodhpur",
+            "kolhapur",
+            "mirzapur",
+            "moradabad",
+            "muzaffarpur",
+            "nanded",
+            "nashik",
+            "nawada",
+            "parbhani",
+            "patna",
+            "porbandar",
+            "Pune",
+            "raipur",
+            "rajgarh",
+            "rajkot",
+            "Ratlam",
+            "rohtak",
+            "sangli",
+            "satna",
+            "sitamarhi",
+            "sitapur",
+            "solapur",
+            "surendranagar",
+            "udaipur",
+            "vadodara",
+            "varanasi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Covid",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Covid-19",
+          "synonyms": [
+            "Corona Virus",
+            "Covid-19",
+            "Latest news on Covid-19"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Essential items",
+          "synonyms": [
+            "Essential"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "List of items",
+          "synonyms": [
+            "items",
+            "items list",
+            "list",
+            "list of item"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Offers",
+          "synonyms": [
+            "Discount",
+            "Offer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vegetables prices",
+          "synonyms": [
+            "Prices of vegetables"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "GM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "Ga",
+            "Gud Aftrnoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "Ge",
+            "Gud Evning"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "Gm",
+            "Gud Mrng"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Itemslist",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Flour",
+          "synonyms": [
+            "1 Kg flour",
+            "flours",
+            "wheat",
+            "Wheat Flour"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Gram flour",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hair oil",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Milk",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pulse",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Red pepper",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rice",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Salt",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Soap",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Spices",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sugar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tooth paste",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vegetable oil",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Order",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Order",
+          "synonyms": [
+            "orders"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": [
+            "cash"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": [
+            "Google pay",
+            "Paytm",
+            "Phone pay"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://www.fast2sms.com/dev/bulkV2",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "o0ryM4eBUbOLCQkP6FJc8n59dHZASaNTqGxzDtgVhiYIlfKE1uxlDE3A6V12R8X4CLdfqWmOjuSKtJzb"
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_6_1615867312731",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1613588208618",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_1_1613588208619"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sure we will order on your request"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1613587432385",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1613629922241",
+      "previous_sibling": "node_4_1613909180021"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter your address."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1615924887561",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1615924887563",
+      "previous_sibling": "handler_5_1615924887563"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1613587522016",
+      "context": {
+        "Itemslist": "@Itemslist"
+      },
+      "conditions": "@Itemslist",
+      "event_name": "input",
+      "dialog_node": "handler_4_1613587522058"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "We accept COD,Card,UPI .What is your mode of payment ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1613588327674",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1613588327675",
+      "previous_sibling": "handler_7_1613588327675"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How much do you want ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1613588208618",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1613588208619",
+      "previous_sibling": "handler_1_1613588208619"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1615924887561",
+      "context": {
+        "address": "@address"
+      },
+      "conditions": "@address",
+      "event_name": "input",
+      "dialog_node": "handler_5_1615924887563"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_9_1615964562795",
+      "event_name": "input",
+      "dialog_node": "handler_5_1615964562809"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Can you please give your contact number ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1613588510512",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1613588510513",
+      "previous_sibling": "handler_7_1613588510513"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter the product name and quantity together and separated the vlaue by by comma"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1613587522016",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1613587522058",
+      "previous_sibling": "handler_4_1613587522058"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1613588327674",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_7_1613588327675"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1613588510512",
+      "context": {
+        "number_2": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_7_1613588510513"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1615964562795",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1615964562809",
+      "previous_sibling": "handler_5_1615964562809"
+    },
+    {
+      "type": "standard",
+      "title": "Essential items",
+      "parent": "node_8_1613546291529",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@enquiry:(Essential items)",
+      "dialog_node": "node_10_1613546443883",
+      "previous_sibling": "response_10_1615879408105"
+    },
+    {
+      "type": "standard",
+      "title": "email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you Your mail id is $email. How may I help you "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1613586690372",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "dialog_node": "node_1_1615916763143"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1613545310969",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "deleting context variables",
+      "output": {
+        "deleted": "<?context.remove('Itemslist')?><?context.remove('number')?><?context.remove('number_2')?><?context.remove('Payment')?><?context.remove('email')?><?context.remove('name')?><?context.remove('address')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1613587432385",
+      "conditions": "true",
+      "dialog_node": "node_3_1613589340101",
+      "previous_sibling": "handler_1_1613629922241"
+    },
+    {
+      "type": "frame",
+      "title": "Order",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name. Your order of $Itemslist of $number quantity is placed will be delivered at this address $address. Please pay your order with $Payment.                                                           The invoice is sent to $number_2      "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Order || @Order",
+      "dialog_node": "node_4_1613587432385",
+      "previous_sibling": "node_8_1613546291529"
+    },
+    {
+      "type": "standard",
+      "title": "message node",
+      "parent": "node_4_1613587432385",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "route": "q",
+            "message": "Thank you $name. Your order of $menu of $number quantity is placed. Please pay your order with $Payment. The invoice is sent to $number_2",
+            "numbers": "$number_2",
+            "language": "english",
+            "sender_id": "FSTSMS"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1613589340101"
+      },
+      "conditions": "true",
+      "dialog_node": "node_4_1613909180021"
+    },
+    {
+      "type": "standard",
+      "title": "Covid-19",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please visit this site at <a href=\"https://www.who.int/emergencies/diseases/novel-coronavirus-2019\" target=\"blank\">Covid-19 Updates</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Covid",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1615867312731",
+      "previous_sibling": "node_4_1613587432385"
+    },
+    {
+      "type": "standard",
+      "title": "Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$name Can you please provide your mail id for future refernce"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "<? input.text ?>"
+      },
+      "conditions": "$next",
+      "dialog_node": "node_7_1613586690372"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#enquiry || @enquiry",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1613546291529",
+      "previous_sibling": "node_3_1613545310969"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening, How can I help you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1613545310969",
+      "conditions": "@Greetings:(Good Evening)",
+      "dialog_node": "response_10_1613545747459",
+      "previous_sibling": "response_9_1613545397256"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "offers on vegetables",
+            "source": "https://i.pinimg.com/originals/22/e0/3a/22e03ad5c660131a0894b10ebc9eac9e.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "10% off on Visa Debit Cards"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "20% off on grocery"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1613546291529",
+      "conditions": "@enquiry:(Offers)",
+      "dialog_node": "response_10_1613580676044"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "List of Items",
+            "source": "https://listonic.com/wp-content/uploads/2018/12/shopping-list-template-Basic-Grocery-List.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "This items are presently available in our MK store"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1613546291529",
+      "conditions": "@enquiry:(List of items)",
+      "dialog_node": "response_10_1615879408105",
+      "previous_sibling": "response_8_1615876368147"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Message sent"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1613909180021",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_3_1613909268102"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_4_1613909180021",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1613909270378",
+      "previous_sibling": "response_3_1613909268102"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Prices of Vegetables",
+            "source": "https://cdn.zeebiz.com/sites/default/files/priclist.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "This vegetables are available in our store."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1613546291529",
+      "conditions": "@enquiry:(Vegetables prices)",
+      "dialog_node": "response_8_1615876368147",
+      "previous_sibling": "response_10_1613580676044"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning, How can I help you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1613545310969",
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_9_1613545397256",
+      "previous_sibling": "response_9_1613545489820"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon, How can I help you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1613545310969",
+      "conditions": "@Greetings:(Good Afternoon)",
+      "dialog_node": "response_9_1613545489820"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How may I assist you ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1613545310969",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1615916143455",
+      "previous_sibling": "response_10_1613545747459"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1613587432385",
+      "variable": "$Itemslist",
+      "dialog_node": "slot_10_1613587522016",
+      "previous_sibling": "node_3_1613589340101"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1613587432385",
+      "variable": "$Payment",
+      "dialog_node": "slot_10_1613588327674",
+      "previous_sibling": "slot_9_1613588208618"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1613587432385",
+      "variable": "$address",
+      "dialog_node": "slot_2_1615924887561",
+      "previous_sibling": "slot_3_1613588510512"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1613587432385",
+      "variable": "$number_2",
+      "dialog_node": "slot_3_1613588510512",
+      "previous_sibling": "slot_10_1613588327674"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1613587432385",
+      "variable": "$number",
+      "dialog_node": "slot_9_1613588208618",
+      "previous_sibling": "slot_10_1613587522016"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1613546443883",
+      "dialog_node": "slot_9_1615964562795"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. Welcome to Mahakal Kirana Store. I am MK Store chatbot capable of showing the list of items, prices of vegetables, offers or discounts and place order.                       \n   "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Please enter your name."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "next": true
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Pandemic Shop Bot",
+  "language": "en",
+  "description": ""
+}
